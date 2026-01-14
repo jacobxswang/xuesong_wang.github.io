@@ -1,2 +1,114 @@
-Hi.
-Posso dormir e comer.
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jacob Wang</title>
+
+  <!-- 关键：因为你是 Project Pages（/xuesong_wang.github.io/） -->
+  <base href="/xuesong_wang.github.io/">
+
+  <meta name="description" content="Personal academic homepage." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <div class="profile">
+      <img class="avatar" src="assets/me.jpg" alt="Portrait (optional)" onerror="this.style.display='none'">
+      <div>
+        <h1>Jacob (Xuesong) Wang</h1>
+        <p class="subtitle">
+          Communications · Semantic Communication · Diffusion Models · Network Coding
+        </p>
+
+        <p class="links">
+          <a href="mailto:YOUR_EMAIL@domain.com">Email</a>
+          <span>·</span>
+          <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
+          <span>·</span>
+          <a href="https://github.com/jacobxswang" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="assets/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        Write a 3–6 line bio here. Keep it concrete: what you work on, what you built, and what you want next.
+      </p>
+      <ul class="bullets">
+        <li><b>Affiliation:</b> Your institution</li>
+        <li><b>Interests:</b> Semantic HARQ, diffusion-aided semantic comm, learning-augmented PHY, ...</li>
+        <li><b>Looking for:</b> Postdoc / collaboration on ...</li>
+      </ul>
+    </section>
+
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul class="bullets">
+        <li><span class="tag">2026-01</span> Update this line with a real event.</li>
+        <li><span class="tag">2025-10</span> Paper released: DiffSem (arXiv ...).</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+
+      <div class="pub">
+        <div class="pub-title">Diffusion-Aided Bandwidth-Efficient Semantic Communication with Adaptive Requests</div>
+        <div class="pub-authors"><b>Jacob Wang</b>, Coauthor A, Coauthor B</div>
+        <div class="pub-venue">Conference/Journal, Year</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://github.com/yourrepo" target="_blank" rel="noopener">Code</a>
+          <a href="assets/slides.pdf" target="_blank" rel="noopener">Slides</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Title #2</div>
+        <div class="pub-authors"><b>Jacob Wang</b>, ...</div>
+        <div class="pub-venue">...</div>
+        <div class="pub-links">
+          <a href="#">PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <a class="tile" href="#" target="_blank" rel="noopener">
+          <div class="tile-title">DiffSem</div>
+          <div class="tile-desc">Receiver-driven semantic HARQ + diffusion inpainting pipeline.</div>
+        </a>
+
+        <a class="tile" href="#" target="_blank" rel="noopener">
+          <div class="tile-title">DNN-based PNC</div>
+          <div class="tile-desc">Learning-augmented physical-layer network coding with SDR-style OFDM evaluation.</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:YOUR_EMAIL@domain.com">YOUR_EMAIL@domain.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="y"></span> Jacob Wang</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
